@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:teste_app/app_controller.dart';
-import 'package:teste_app/home_page.dart';
-import 'package:teste_app/login_page.dart';
+import 'package:flutter_application_1/app_controller.dart';
+import 'package:flutter_application_1/home_page.dart';
+import 'package:flutter_application_1/login_page.dart';
 
 class AppWidget extends StatelessWidget{
   @override
@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget{
       builder: (BuildContext context, Widget? child) { 
         return MaterialApp(
         theme: ThemeData(
-          primarySwatch: Colors.red,
+          primaryColor: Colors.red,
           brightness: AppController.instance.darkTheme ? Brightness.dark : Brightness.light,
           ),
         initialRoute: '/',
